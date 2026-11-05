@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>91次元官网-91次元_次元社区_二次元交流_动漫爱好者聚集地</title>
+<meta name="description" content="91次元官网是一个面向二次元爱好者的交流社区，围绕动漫、漫画、游戏、同人创作与次元文化话题展开讨论。本页说明91次元官网的定位、社区板块、参与方式、内容规范与常见问题，帮助你了解如何在91次元中找到感兴趣的话题与同好，并注意账号与浏览安全。">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232a1b4d'/%3E%3Ccircle cx='32' cy='32' r='18' fill='none' stroke='%23ffd166' stroke-width='3'/%3E%3Ccircle cx='25' cy='28' r='2.6' fill='%23ffd166'/%3E%3Ccircle cx='39' cy='28' r='2.6' fill='%23ffd166'/%3E%3Cpath d='M24 38c4 5 12 5 16 0' fill='none' stroke='%2365e0c8' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#241a33;
+  --ink-soft:#4c4160;
+  --paper:#f6f2fb;
+  --plum:#2a1b4d;
+  --plum-2:#3d2a68;
+  --gold:#e8b23a;
+  --mint:#3fbfa6;
+  --line:#ded4ee;
+  --card:#ffffff;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  background:var(--paper);
+  color:var(--ink);
+  line-height:1.75;
+  font-size:16px;
+}
+a{color:var(--plum-2);text-decoration:none;}
+a:hover{text-decoration:underline;}
+img,svg{max-width:100%;}
+
+/* 顶部 */
+.topbar{
+  background:var(--plum);
+  color:#efe8fb;
+  font-size:13px;
+}
+.topbar .wrap{
+  display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
+  padding:8px 20px;
+}
+.topbar span{opacity:.85;}
+
+/* 头部 */
+.site-head{
+  background:linear-gradient(135deg,#2a1b4d 0%,#40296f 55%,#5a3a8c 100%);
+  color:#f6f2fb;
+  padding:0 0 26px;
+}
+.head-wrap{max-width:1120px;margin:0 auto;padding:0 20px;}
+.brandrow{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:16px;padding:20px 0 14px;flex-wrap:wrap;
+}
+.brandmark{display:flex;align-items:center;gap:12px;}
+.brandmark .glyph{
+  width:46px;height:46px;flex:0 0 46px;border-radius:12px;
+  background:rgba(255,255,255,.12);
+  display:flex;align-items:center;justify-content:center;
+}
+.brandmark strong{font-size:22px;letter-spacing:.5px;display:block;}
+.brandmark em{font-style:normal;font-size:12px;opacity:.75;letter-spacing:2px;}
+.head-nav{display:flex;gap:6px;flex-wrap:wrap;}
+.head-nav a{
+  color:#e9e0fb;font-size:14px;padding:7px 13px;border-radius:999px;
+  border:1px solid rgba(255,255,255,.16);
+}
+.head-nav a:hover{background:rgba(255,255,255,.14);text-decoration:none;}
+
+/* 首屏 */
+.hero{
+  max-width:1120px;margin:0 auto;padding:12px 20px 8px;
+  display:grid;grid-template-columns:1.55fr .95fr;gap:28px;align-items:start;
+}
+.hero h1{
+  font-size:31px;line-height:1.35;margin:6px 0 12px;font-weight:800;
+  letter-spacing:.5px;
+}
+.hero .lede{
+  font-size:16px;color:#e3d9f6;margin:0 0 16px;
+}
+.hero .quick{
+  display:flex;gap:10px;flex-wrap:wrap;margin-top:4px;
+}
+.hero .quick a{
+  background:var(--gold);color:#2a1b4d;font-weight:700;font-size:14px;
+  padding:9px 18px;border-radius:8px;
+}
+.hero .quick a.ghost{
+  background:transparent;color:#f0e9fd;border:1px solid rgba(255,255,255,.35);
+}
+.hero .quick a:hover{text-decoration:none;opacity:.92;}
+.hero-side{
+  background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.16);
+  border-radius:14px;padding:16px 18px;
+}
+.hero-side h2{
+  font-size:14px;margin:0 0 10px;color:var(--gold);letter-spacing:1px;font-weight:700;
+}
+.hero-side ul{margin:0;padding-left:18px;font-size:14px;color:#e6ddf7;}
+.hero-side li{margin-bottom:6px;}
+
+/* 主体 */
+main{max-width:1120px;margin:0 auto;padding:10px 20px 20px;}
+.sect{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:26px 28px;
+  margin:22px 0;
+}
+.sect > h2{
+  font-size:21px;margin:0 0 6px;font-weight:800;color:var(--plum);
+  padding-left:12px;border-left:5px solid var(--gold);
+  line-height:1.4;
+}
+.sect .subhead{
+  font-size:13px;color:var(--ink-soft);margin:0 0 16px;padding-left:12px;
+}
+.sect p{margin:0 0 13px;color:#332947;}
+.sect p:last-child{margin-bottom:0;}
+
+/* 板块卡片 */
+.tiles{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:16px;
+}
+.tile{
+  border:1px solid var(--line);border-radius:11px;padding:15px 16px;
+  background:#fbf9fe;
+}
+.tile h3{
+  font-size:15px;margin:0 0 6px;color:var(--plum-2);font-weight:700;
+}
+.tile .tag{
+  display:inline-block;font-size:11px;color:#2a1b4d;background:#ffe6a8;
+  border-radius:4px;padding:1px 7px;margin-bottom:8px;letter-spacing:.5px;
+}
+.tile p{font-size:13.5px;color:#4c4160;margin:0;}
+
+/* 清单 */
+.checklist{
+  list-style:none;padding:0;margin:14px 0 0;
+  display:grid;grid-template-columns:repeat(2,1fr);gap:10px 22px;
+}
+.checklist li{
+  position:relative;padding-left:24px;font-size:14.5px;color:#3a2f4d;
+}
+.checklist li::before{
+  content:"";position:absolute;left:0;top:9px;width:11px;height:11px;
+  border-radius:3px;background:var(--mint);
+}
+
+/* 步骤 */
+.steps{counter-reset:st;margin:16px 0 0;padding:0;list-style:none;}
+.steps li{
+  counter-increment:st;position:relative;padding:0 0 16px 48px;
+  border-left:2px dashed var(--line);margin-left:16px;
+}
+.steps li:last-child{border-left-color:transparent;padding-bottom:0;}
+.steps li::before{
+  content:counter(st);position:absolute;left:-17px;top:0;
+  width:32px;height:32px;border-radius:50%;
+  background:var(--plum);color:#ffd166;font-weight:700;font-size:14px;
+  display:flex;align-items:center;justify-content:center;
+}
+.steps h3{font-size:15px;margin:0 0 4px;color:var(--plum-2);}
+.steps p{font-size:14px;margin:0;color:#43385a;}
+
+/* 双栏 */
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:26px;}
+.two-col h3{font-size:16px;margin:0 0 8px;color:var(--plum-2);}
+
+/* 提示条 */
+.notice{
+  background:#fff8e6;border:1px solid #f2d98c;border-radius:11px;
+  padding:16px 18px;margin-top:16px;
+}
+.notice h3{font-size:15px;margin:0 0 6px;color:#7a5a10;}
+.notice p{font-size:14px;color:#6b5413;margin:0;}
+
+/* 问答 */
+.faq-list{margin:6px 0 0;}
+.faq-item{
+  border-bottom:1px solid var(--line);padding:14px 0;
+}
+.faq-item:last-child{border-bottom:none;}
+.faq-item h3{
+  font-size:15.5px;margin:0 0 6px;color:var(--plum-2);font-weight:700;
+}
+.faq-item p{font-size:14.5px;color:#3f3554;margin:0;}
+
+/* 行动区 */
+.cta{
+  background:linear-gradient(120deg,#2a1b4d,#4a2f7a);
+  color:#f4eefc;border-radius:14px;padding:28px 30px;margin:22px 0;
+  display:flex;justify-content:space-between;align-items:center;gap:22px;flex-wrap:wrap;
+}
+.cta h2{font-size:20px;margin:0 0 8px;color:#ffd166;}
+.cta p{margin:0;font-size:14.5px;color:#ded3f4;max-width:640px;}
+.cta .btn{
+  background:var(--gold);color:#2a1b4d;font-weight:700;font-size:15px;
+  padding:12px 26px;border-radius:9px;white-space:nowrap;
+}
+.cta .btn:hover{text-decoration:none;opacity:.9;}
+
+/* 页脚 */
+.site-foot{
+  background:#1d1330;color:#c9bee0;margin-top:26px;padding:30px 20px 34px;
+}
+.foot-wrap{max-width:1120px;margin:0 auto;}
+.foot-cols{
+  display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:26px;
+  padding-bottom:20px;border-bottom:1px solid rgba(255,255,255,.1);
+}
+.foot-cols h4{font-size:14px;margin:0 0 10px;color:#ffd166;letter-spacing:.5px;}
+.foot-cols p{font-size:13.5px;margin:0 0 8px;color:#b7aad0;line-height:1.7;}
+.foot-cols ul{list-style:none;margin:0;padding:0;font-size:13.5px;}
+.foot-cols li{margin-bottom:6px;}
+.foot-cols a{color:#b7aad0;}
+.foot-bottom{font-size:12.5px;color:#8d80a8;padding-top:16px;line-height:1.8;}
+
+@media (max-width:900px){
+  .hero{grid-template-columns:1fr;}
+  .tiles{grid-template-columns:repeat(2,1fr);}
+  .two-col{grid-template-columns:1fr;}
+  .foot-cols{grid-template-columns:1fr 1fr;}
+}
+@media (max-width:600px){
+  body{font-size:15px;}
+  .hero h1{font-size:24px;}
+  .sect{padding:20px 16px;}
+  .sect > h2{font-size:18px;}
+  .tiles{grid-template-columns:1fr;}
+  .checklist{grid-template-columns:1fr;}
+  .foot-cols{grid-template-columns:1fr;}
+  .cta{padding:22px 18px;}
+  .cta .btn{width:100%;text-align:center;}
+  .head-nav a{font-size:13px;padding:6px 11px;}
+  .brandmark strong{font-size:19px;}
+  .topbar .wrap{padding:8px 16px;}
+  .head-wrap,.hero,main{padding-left:16px;padding-right:16px;}
+}
+</style>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>91次元官网 · 二次元交流社区信息页</span>
+    <span>本页为站点介绍与使用说明，非官方授权页面</span>
+  </div>
+</div>
+
+<header class="site-head">
+  <div class="head-wrap">
+    <div class="brandrow">
+      <div class="brandmark">
+        <div class="glyph" aria-hidden="true">
+          <svg width="26" height="26" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="32" cy="32" r="24" fill="none" stroke="#ffd166" stroke-width="4"/>
+            <circle cx="24" cy="27" r="3" fill="#ffd166"/>
+            <circle cx="40" cy="27" r="3" fill="#ffd166"/>
+            <path d="M22 39c6 7 14 7 20 0" fill="none" stroke="#65e0c8" stroke-width="4" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div>
+          <strong>91次元官网</strong>
+          <em>次元社区 · 动漫交流 · 同好聚集</em>
+        </div>
+      </div>
+      <nav class="head-nav" aria-label="页面导航">
+        <a href="#positioning">站点定位</a>
+        <a href="#boards">社区板块</a>
+        <a href="#join">参与方式</a>
+        <a href="#rules">内容规范</a>
+        <a href="#faq">常见问题</a>
+      </nav>
+    </div>
+    <div class="hero">
+      <div>
+        <h1>91次元官网：面向二次元爱好者的交流社区与内容整理说明</h1>
+        <p class="lede">想了解91次元官网是什么、社区里有哪些话题、如何浏览与参与讨论，这一页会先给出整体说明，再逐项拆解板块、使用步骤与注意事项。</p>
+        <div class="quick">
+          <a href="#boards">查看社区板块</a>
+          <a href="#join" class="ghost">了解参与方式</a>
+        </div>
+      </div>
+      <aside class="hero-side">
+        <h2>这一页能回答</h2>
+        <ul>
+          <li>91次元官网大致是什么类型的站点</li>
+          <li>社区常见板块与话题方向</li>
+          <li>新访问者如何浏览与参与</li>
+          <li>内容发布与账号安全注意事项</li>
+        </ul>
+      </aside>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="sect" id="positioning">
+    <h2>91次元官网是什么：从关键词出发理解站点类型</h2>
+    <p class="subhead">先厘清名称含义，再决定是否值得深入了解</p>
+    <p>“91次元官网”由“91次元”与“官网”两部分组成。“次元”在中文网络语境里常与二次元、动漫、漫画、游戏、同人创作等亚文化内容关联，因此这个关键词通常指向一个以二次元话题为核心的社区型站点或内容聚集地。而后缀“官网”更多是搜索者的习惯表达，用来寻找该名称对应的主站入口或官方说明页面。</p>
+    <p>需要先说明的是：本页是围绕91次元官网这一关键词整理的信息页，用于帮助访问者理解站点定位、常见板块与使用方式，并不代表官方授权，也不承诺任何具体功能。真实可用的入口、板块名称与服务范围，应以访问时站点实际呈现为准。</p>
+    <p>从搜索意图看，查找91次元官网的人大致有三类：一是初次听说这个名字，想确认它是不是二次元社区；二是已经接触过相关内容，想找回熟悉的讨论氛围；三是想了解如何参与讨论、发布作品或寻找同好。针对这三类需求，下面的内容会分别给出可操作的信息，而不是笼统地堆砌名词。</p>
+    <p>把91次元官网理解为“二次元兴趣者的聚合空间”会更准确：它的价值不在于提供单一作品，而在于把看番、追漫、玩二次元游戏、写同人、做手书、聊设定的用户聚到一起，通过分区、话题和评论区形成持续交流。理解这一点，就能判断自己是否属于它的目标用户。</p>
+    <ul class="checklist">
+      <li>关键词偏向社区型站点，而非单一作品页</li>
+      <li>核心内容围绕动漫、漫画、游戏与同人</li>
+      <li>“官网”多为搜索习惯，不代表官方背书</li>
+      <li>适合寻找同好与话题讨论的二次元用户</li>
+      <li>具体入口与功能以实际访问页面为准</li>
+      <li>本页只做信息说明，不提供账号或下载</li>
+    </ul>
+  </section>
+
+  <section class="sect" id="boards">
+    <h2>社区板块与话题方向：91次元官网常见内容结构</h2>
+    <p class="subhead">按兴趣分区，比按热度乱翻更容易找到同好</p>
+    <p>二次元社区的内容通常按“作品类型 + 参与方式”两条线组织。作品类型包括动画、漫画、轻小说、二次元游戏、声优与音乐；参与方式包括讨论、资源整理、创作发布、活动参与。了解91次元官网时，可以先用这两条线建立心理地图，再进入具体板块。</p>
+    <p>动画与漫画讨论区是最基础的板块，常见话题有新番观感、旧作补完、漫画分镜分析、角色塑造对比。这类板块的特点是更新频率高、时效性强，适合想跟上当季讨论节奏的用户。轻小说与设定区则更偏文本，讨论世界观、人物关系与改编差异，节奏相对慢，适合愿意长文交流的人。</p>
+    <p>二次元游戏与同人创作是另外两块重点。游戏区常围绕角色养成、剧情走向、活动体验展开；同人区则覆盖绘画、手书、同人文、cosplay 与手工。对91次元官网这类社区来说，创作区往往是活跃度的关键，因为它同时承载展示与反馈两种需求。</p>
+    <p>此外还有综合水区、新人报到与站务反馈等功能性板块。它们不直接产出内容，但决定了社区秩序与新人体验。初次接触91次元官网时，先看新人指引与版规，往往比直接发帖更省事。</p>
+    <div class="tiles">
+      <div class="tile">
+        <span class="tag">作品讨论</span>
+        <h3>动画新番与补番交流</h3>
+        <p>按季度整理观感、比较改编质量、讨论角色弧光，适合想找同季追番伙伴的用户。</p>
+      </div>
+      <div class="tile">
+        <span class="tag">作品讨论</span>
+        <h3>漫画与轻小说专区</h3>
+        <p>聚焦分镜、叙事节奏与世界观设定，长文分析较多，适合愿意细读与回帖的人。</p>
+      </div>
+      <div class="tile">
+        <span class="tag">互动娱乐</span>
+        <h3>二次元游戏话题</h3>
+        <p>围绕剧情、角色与活动体验展开，注意避免剧透，发布前先看板块约定。</p>
+      </div>
+      <div class="tile">
+        <span class="tag">创作展示</span>
+        <h3>同人绘画与手书</h3>
+        <p>作品展示与反馈并重，标注完成度与使用素材来源，是获得建议的有效方式。</p>
+      </div>
+      <div class="tile">
+        <span class="tag">创作展示</span>
+        <h3>同人文与设定考据</h3>
+        <p>适合长文本创作与设定推演，建议分章发布，便于读者跟进与讨论。</p>
+      </div>
+      <div class="tile">
+        <span class="tag">功能板块</span>
+        <h3>新人报到与站务反馈</h3>
+        <p>了解基本规则、反馈使用问题、提出改进建议，是熟悉社区秩序的第一步。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sect" id="join">
+    <h2>如何浏览与参与：从旁观到发言的合理路径</h2>
+    <p class="subhead">先观察氛围，再决定是否投入时间</p>
+    <p>对任何社区型站点来说，最稳妥的进入方式都是“先看后说”。访问91次元官网时，可以先浏览首页推荐与各板块置顶帖，观察讨论语气、回复长度与版主管理风格。这一步能帮你判断社区是否与自己的表达习惯匹配，避免上手就发帖却无人回应。</p>
+    <p>确认感兴趣的方向后，建议先完整读一遍板块规则。规则通常写明允许的话题范围、剧透处理方式、转载与引用要求。很多新人觉得规则冗长，但正是这些约定决定了讨论能否持续。对91次元官网这类以兴趣为核心的社区，遵守分区习惯比追求发帖数量更重要。</p>
+    <p>参与讨论时，从回复开始比从主帖开始更自然。针对具体观点补充信息、提出不同看法或分享相关经历，都比单纯“顶”“支持”更有价值。当积累了一定熟悉度，再尝试发布自己的整理帖或创作帖，反馈质量通常更高。</p>
+    <p>如果只是想安静地看内容，也完全合理。多数社区允许潜水浏览，只是部分板块或功能可能需要注册后才能查看。是否注册、是否发言，应结合自己的时间投入与隐私考虑来决定，不必因为“官网”二字就急于提交个人信息。</p>
+    <ol class="steps">
+      <li>
+        <h3>浏览首页与置顶内容</h3>
+        <p>先了解91次元官网的整体氛围与主要话题，判断是否符合自己的兴趣方向。</p>
+      </li>
+      <li>
+        <h3>阅读板块规则与新人指引</h3>
+        <p>弄清分区范围、发帖格式与禁止事项，减少后续不必要的误会。</p>
+      </li>
+      <li>
+        <h3>从回复具体观点开始</h3>
+        <p>针对他人内容补充信息或提出看法，比空泛附和更容易获得回应。</p>
+      </li>
+      <li>
+        <h3>尝试发布整理或创作内容</h3>
+        <p>选题明确、信息完整的帖子更受欢迎，发布前检查是否重复或涉及剧透。</p>
+      </li>
+      <li>
+        <h3>持续维护自己的帖子</h3>
+        <p>回应评论、补充遗漏、修正错误，是建立稳定交流关系的有效方式。</p>
+      </li>
+    </ol>
+  </section>
+
+  <section class="sect" id="rules">
+    <h2>内容规范与账号安全：使用91次元官网时的注意事项</h2>
+    <p class="subhead">兴趣社区也需要边界感</p>
+    <div class="two-col">
+      <div>
+        <h3>发布内容的基本约定</h3>
+        <p>二次元社区对剧透通常比较敏感。涉及剧情转折、结局或关键设定的内容，应在标题或开头标注提示，并使用折叠或分隔方式处理。这样既尊重尚未观看的用户，也让讨论得以继续。</p>
+        <p>转载他人作品、翻译或整理资料时，注明来源与授权情况是基本礼貌。若来源不明，宁可只做概述与链接指向，也不要直接搬运全文。对91次元官网这类以创作为重要组成部分的社区，尊重原作者直接影响创作氛围。</p>
+        <p>讨论作品时可以批评，但应针对内容本身，避免上升到对创作者或读者的攻击。分区管理通常会对人身攻击、引战与刷屏作出处理，了解这些边界能减少账号被限制的风险。</p>
+      </div>
+      <div>
+        <h3>账号与浏览安全</h3>
+        <p>注册任何社区账号前，先确认页面是否为真实入口，避免在仿冒页面输入常用密码。建议为兴趣类站点设置独立密码，不与邮箱、支付类账号共用。</p>
+        <p>对要求提供手机号、身份证或支付信息的环节保持警惕。正规讨论社区通常不需要过多敏感信息，若遇到以“解锁内容”“验证身份”为由索取资料的情况，应先核实再操作。</p>
+        <p>浏览91次元官网相关内容时，注意区分用户发布与站点公告。用户观点不代表站点立场，涉及资源下载、外部链接的内容尤其需要自行判断风险。</p>
+      </div>
+    </div>
+    <div class="notice">
+      <h3>关于“官网”的提醒</h3>
+      <p>网络中存在借用热门名称搭建的仿冒页面。查找91次元官网时，建议通过可信渠道核对入口，不轻信来源不明的跳转链接与二维码；本页仅提供主题说明，不构成官方入口或授权证明。</p>
+    </div>
+  </section>
+
+  <section class="sect" id="compare">
+    <h2>不同访问者的选择建议：你适合怎样使用这个社区</h2>
+    <p class="subhead">按目的匹配用法，比盲目注册更省时间</p>
+    <p>如果你的目的是“找同好聊当季新番”，重点应放在动画讨论区与综合水区，关注更新节奏快的帖子，参与短平快的观感交流。这类用法对账号要求不高，先浏览再决定是否发言即可。</p>
+    <p>如果你更想“系统整理某部作品的设定”，漫画、轻小说与考据类板块更合适。这类内容需要较长阅读时间，建议收藏有价值的整理帖，并在回复中补充自己的发现，逐步建立内容线索。</p>
+    <p>如果你希望“展示自己的同人创作”，则应先熟悉创作区的发布格式、标签习惯与反馈文化。91次元官网这类社区对原创通常更友好，但前提是信息完整、来源清楚、态度开放。把作品当作交流起点，而不是单纯求赞，更容易获得具体建议。</p>
+    <p>如果你只是“想随便看看”，也不必强求参与。把社区当作内容浏览渠道同样合理，只需注意不随意点击不明外链、不提交敏感信息即可。</p>
+    <ul class="checklist">
+      <li>追番讨论：关注时效性强的动画板块</li>
+      <li>设定整理：选择漫画、轻小说与考据区</li>
+      <li>作品展示：先读创作区格式与反馈习惯</li>
+      <li>轻度浏览：以看为主，谨慎对待外部链接</li>
+      <li>长期参与：维护自己的帖子并回应评论</li>
+      <li>任何用法：先规则后发言，先观察后投入</li>
+    </ul>
+  </section>
+
+  <section class="sect" id="faq">
+    <h2>关于91次元官网的常见问题</h2>
+    <p class="subhead">集中回答访问者最常提出的疑问</p>
+    <div class="faq-list">
+      <div class="faq-item">
+        <h3>91次元官网是官方网站吗？</h3>
+        <p>“官网”在这里更多是搜索者的习惯说法，用来寻找该名称对应的主站。是否属于官方运营，需要以站点自身公示的信息为准。本页是围绕91次元官网关键词整理的信息说明，不代表官方身份，也不提供官方入口。</p>
+      </div>
+      <div class="faq-item">
+        <h3>91次元官网主要提供什么内容？</h3>
+        <p>从名称与常见用法看，它指向以二次元文化为核心的社区型站点，内容通常覆盖动画、漫画、轻小说、二次元游戏、同人创作与综合讨论。具体板块设置与内容范围会随运营情况变化，访问时以实际页面为准。</p>
+      </div>
+      <div class="faq-item">
+        <h3>不注册可以浏览91次元官网吗？</h3>
+        <p>多数同类社区允许未注册用户浏览部分公开内容，但某些板块、搜索或互动功能可能需要登录。是否需要注册，建议先浏览公开区域，确认内容符合兴趣后再决定，避免过早提交个人信息。</p>
+      </div>
+      <div class="faq-item">
+        <h3>在社区发布内容需要注意什么？</h3>
+        <p>重点有三点：涉及剧情转折时标注剧透提示；转载或引用他人作品时注明来源与授权情况；讨论作品时针对内容而非人身。遵守分区规则与发布格式，能显著减少被删帖或提醒的情况。</p>
+      </div>
+      <div class="faq-item">
+        <h3>如何判断访问的91次元官网页面是否可信？</h3>
+        <p>可以从入口来源、页面信息完整度、是否索取敏感资料三方面判断。来源不明的跳转链接、要求输入常用密码或支付信息的页面都应提高警惕。兴趣社区通常不需要过多敏感信息，遇到异常要求应先核实。</p>
+      </div>
+      <div class="faq-item">
+        <h3>找不到想要的板块或内容怎么办？</h3>
+        <p>可以先使用站内搜索或浏览站务、新人板块的指引帖，了解分区结构与常见问题。若仍有疑问，通过站内反馈渠道提问通常比在综合区发帖更有效。本页不提供站内账号服务，无法代为查询具体内容。</p>
+      </div>
+      <div class="faq-item">
+        <h3>本页与91次元官网是什么关系？</h3>
+        <p>本页是围绕91次元官网这一关键词编写的信息说明，帮助访问者理解关键词含义、社区类型、参与方式与注意事项，不隶属于任何官方运营方，也不提供注册、下载或跳转服务。</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="cta">
+    <div>
+      <h2>先理解，再决定是否参与</h2>
+      <p>无论你是想找同好聊新番，还是想整理设定、展示创作，先弄清91次元官网的社区属性与规则，再投入时间与账号信息，会更从容也更安全。</p>
+    </div>
+    <a class="btn" href="#positioning">回到站点定位说明</a>
+  </div>
+
+</main>
+
+<footer class="site-foot">
+  <div class="foot-wrap">
+    <div class="foot-cols">
+      <div>
+        <h4>关于本页</h4>
+        <p>本页围绕91次元官网这一关键词整理站点类型、社区板块、参与方式与安全提示，供访问者快速了解主题，不构成官方授权、入口提供或服务承诺。</p>
+        <p>内容以中性说明为主，具体功能与页面形态请以实际访问结果为准。</p>
+      </div>
+      <div>
+        <h4>页面导航</h4>
+        <ul>
+          <li><a href="#positioning">站点定位</a></li>
+          <li><a href="#boards">社区板块</a></li>
+          <li><a href="#join">参与方式</a></li>
+          <li><a href="#rules">内容规范</a></li>
+          <li><a href="#faq">常见问题</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>阅读提示</h4>
+        <ul>
+          <li>核对入口来源，谨防仿冒页面</li>
+          <li>为兴趣站点设置独立密码</li>
+          <li>发布内容注意剧透与转载规范</li>
+          <li>对索取敏感信息的行为保持警惕</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      91次元官网主题信息页 · 本页为关键词说明与使用参考，非官方站点，不提供账号注册、内容下载或跳转服务。二次元社区的具体板块、规则与功能以实际访问页面为准。
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
